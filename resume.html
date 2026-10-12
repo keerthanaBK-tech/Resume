@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keerthana P - Resume</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Times New Roman", Times, serif;
+            background-color: #eaf0f6;
+            color: #252b36;
+            line-height: 1.5;
+            padding: 30px 15px;
+        }
+
+        .resume {
+            max-width: 850px;
+            margin: auto;
+            background-color: #ffffff;
+            box-shadow: 0 5px 22px rgba(0, 0, 0, 0.12);
+        }
+
+        .header {
+            background-color: #17365d;
+            color: #ffffff;
+            padding: 32px 40px;
+            border-bottom: 5px solid #2f75b5;
+        }
+
+        .header h1 {
+            font-size: 34px;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .header h3 {
+            font-size: 18px;
+            font-weight: normal;
+            color: #dce9f8;
+            margin-bottom: 15px;
+        }
+
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 20px;
+            font-size: 14px;
+        }
+
+        .contact a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 25px 40px 35px;
+        }
+
+        section {
+            margin-bottom: 23px;
+        }
+
+        section h2 {
+            font-size: 20px;
+            color: #17365d;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid #2f75b5;
+            padding-bottom: 5px;
+            margin-bottom: 12px;
+        }
+
+        p, li, td, th {
+            font-size: 15px;
+        }
+
+        .entry {
+            margin-bottom: 15px;
+        }
+
+        .entry-heading {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+            gap: 4px 12px;
+        }
+
+        .entry-heading h3 {
+            font-size: 17px;
+            color: #252b36;
+        }
+
+        .date {
+            font-size: 14px;
+            font-style: italic;
+            color: #555f6d;
+        }
+
+        .subheading {
+            color: #315f8e;
+            font-weight: bold;
+            margin: 3px 0 5px;
+        }
+
+        ul {
+            padding-left: 22px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 4px;
+        }
+
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+
+        .education-table th {
+            background-color: #17365d;
+            color: #ffffff;
+            text-align: left;
+            padding: 10px 8px;
+        }
+
+        .education-table td {
+            border: 1px solid #d6dee8;
+            padding: 9px 8px;
+            vertical-align: top;
+        }
+
+        .education-table tr:nth-child(even) {
+            background-color: #f2f6fb;
+        }
+
+        .skills-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px 22px;
+        }
+
+        .skill-item {
+            padding: 8px 10px;
+            background-color: #f2f6fb;
+            border-left: 3px solid #2f75b5;
+        }
+
+        .skill-item strong {
+            color: #17365d;
+        }
+
+        .project {
+            margin-bottom: 13px;
+        }
+
+        .project h3 {
+            font-size: 17px;
+            margin-bottom: 4px;
+        }
+
+        .certifications li {
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 25px 20px;
+            }
+
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .content {
+                padding: 22px 20px;
+            }
+
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+
+            .education-table th,
+            .education-table td {
+                padding: 7px 5px;
+                font-size: 13px;
+            }
+        }
+        .technical-skills {
+    padding-left: 22px;
+    margin-top: 5px;
+}
+
+.technical-skills li {
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+.technical-skills strong {
+    color: #17365d;
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.profile-img {
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    flex-shrink: 0;
+}
+
+.header-details {
+    flex: 1;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        gap: 15px;
+    }
+
+    .profile-img {
+        width: 85px;
+        height: 85px;
+    }
+}
+.header-details {
+    flex: 1;
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+<div class="resume">
+    <header class="header">
+    <div class="header-content">
+
+        <img src="keerthana.jpeg"
+             alt="Keerthana P"
+             class="profile-img">
+
+        <div class="header-details">
+            <h1>KEERTHANA P</h1>
+            <h3>B.E Computer Science and Engineering</h3>
+            <h3>Thiruvallur | 8015035646 | keerthu4506@gmail.com</h3>
+     
+    </div>
+</header>
+
+    <main class="content">
+
+        <section>
+            <h2>Career Objective</h2>
+            <p>
+                A final-year Computer Science and Engineering student interested
+                in software development and web technologies. Looking for an
+                opportunity to apply my technical knowledge, improve my skills,
+                and contribute to real-world software projects.
+            </p>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+
+            <table class="education-table">
+                <thead>
+                    <tr>
+                        <th>Qualification</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>B.E- CSE</td>
+                        <td>S.A. Engineering College</td>
+                        <td>2023–2027</td>
+                        <td>CGPA: 8.98</td>
+                    </tr>
+
+                    <tr>
+                        <td>Higher Secondary</td>
+                        <td>Sacred Heart Girls Hr. Sec. School</td>
+                        <td>2021–2023</td>
+                        <td>86%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+    <h2>TECHNICAL SKILLS</h2>
+
+    <ul class="technical-skills">
+        <li><strong>Programming Languages:</strong> Java, JavaScript, Python, C</li>
+        <li><strong>Frontend Development:</strong> HTML5, CSS3, React.js, </li>
+        <li><strong>Backend Development:</strong> Node.js, Express.js, </li>
+        <li><strong>Database:</strong> MongoDB, MySQL</li>
+        
+    </ul>
+</section>
+        <section>
+            <h2>Internship Experience</h2>
+
+            <div class="entry">
+                <div class="entry-heading">
+                    <h3>Full Stack Java Developer Intern</h3>
+                    <span class="date">May 2026 – June 2026</span>
+                </div>
+
+                <p class="subheading">Approtech R&D Solutions Pvt. Ltd.</p>
+
+                <ul>
+                    <li>
+                        Worked on Dictify, a smart online dictionary and
+                        vocabulary learning system.
+                    </li>
+                    <li>
+                        Gained practical experience in Java backend development
+                        and React.js frontend development.
+                    </li>
+                    <li>
+                        Worked on developing user-friendly pages and integrating
+                        frontend components with backend functionality.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="entry">
+                <div class="entry-heading">
+                    <h3>Web Design Intern</h3>
+                    <span class="date">June 2025 – July 2025</span>
+                </div>
+
+                <p class="subheading">DetQel</p>
+
+                <ul>
+                    <li>
+                        Worked with WordPress to create responsive website
+                        layouts.
+                    </li>
+                    <li>
+                        Used Figma to prepare wireframes and design user
+                        interface layouts.
+                    </li>
+                    <li>
+                        Learned the basics of responsive web design and
+                        user-friendly website development.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>1. Dictify – Smart Online Dictionary</h3>
+                <p>
+                    Developed a dictionary and vocabulary learning application
+                    with word search, favorites, search history, and vocabulary
+                    practice features.
+                </p>
+                <p>
+                    <strong>Technologies:</strong> Java, React.js, MongoDB
+                </p>
+            </div>
+            
+
+            <div class="project">
+                <h3>2. Dictify – Online Quiz Platform</h3>
+                <p>
+                    Developed an online quiz application for practicing
+                    technical subjects, checking scores, reviewing answers,
+                    and tracking quiz progress.
+                </p>
+                <p>
+                    <strong>Technologies:</strong> Java, Spring Boot, MongoDB,
+                    HTML, CSS, JavaScript
+                </p>
+            </div>
+        </section>
+        <section>
+            <h2>Certifications</h2>
+
+            <ul class="certifications">
+                <li>Infosys Springboard – Front End Web Developer</li>
+                <li>AWS Academy Graduate – Cloud Foundations</li>
+                <li>LinkedIn Learning – Career Essentials in Software Development</li>
+                <li>Cisco – Introduction to Cyber Security</li>
+                <li>Mendix – Rapid Developer</li>
+            </ul>
+        </section>
+
+    </main>
+</div>
+
+</body>
+</html>
+
+
