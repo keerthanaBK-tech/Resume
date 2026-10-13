@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keerthana P - Resume</title>
-
     <style>
         * {
             box-sizing: border-box;
@@ -214,20 +213,23 @@
 .header-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 25px;
-}
-
-.profile-img {
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid #ffffff;
-    flex-shrink: 0;
 }
 
 .header-details {
     flex: 1;
+    text-align: left;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+    flex-shrink: 0;
+    margin-left: 0;
 }
 
 @media (max-width: 600px) {
@@ -240,28 +242,134 @@
         height: 85px;
     }
 }
-.header-details {
-    flex: 1;
-    text-align: center;
+
+.header-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
 }
-    </style>
+
+.header-actions button {
+    padding: 9px 12px;
+    border: 1px solid #60a5fa;
+    border-radius: 6px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.header-actions button:hover {
+    background-color: #1e293b;
+    transform: translateY(-1px);
+}
+
+body.dark-theme {
+    background-color: #121820;
+    color: #e5e7eb;
+}
+
+body.dark-theme .resume {
+    background-color: #1e293b;
+    color: #e5e7eb;
+}
+
+body.dark-theme section h2 {
+    color: #93c5fd;
+    border-bottom-color: #60a5fa;
+}
+
+body.dark-theme .entry-heading h3,
+body.dark-theme .project h3 {
+    color: #f1f5f9;
+}
+
+body.dark-theme .date {
+    color: #cbd5e1;
+}
+
+body.dark-theme .subheading {
+    color: #93c5fd;
+}
+
+body.dark-theme .technical-skills strong,
+body.dark-theme .skill-item strong {
+    color: #93c5fd;
+}
+
+body.dark-theme .skill-item {
+    background-color: #273449;
+    border-left-color: #60a5fa;
+}
+
+body.dark-theme .education-table th {
+    background-color: #334155;
+}
+
+body.dark-theme .education-table td {
+    border-color: #475569;
+}
+
+body.dark-theme .education-table tr:nth-child(even) {
+    background-color: #273449;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header-details {
+        min-width: 0;
+    }
+}    </style>
 </head>
 
 <body>
 <div class="resume">
     <header class="header">
     <div class="header-content">
-
-        <img src="keerthana.jpeg"
-             alt="Keerthana P"
-             class="profile-img">
-
         <div class="header-details">
             <h1>KEERTHANA P</h1>
             <h3>B.E Computer Science and Engineering</h3>
             <h3>Thiruvallur | 8015035646 | keerthu4506@gmail.com</h3>
-     
+        </div>
+
+        <img src="keerthana.jpeg"
+             alt="Keerthana P"
+             class="profile-img">
     </div>
+    
+<div class="header-actions">
+    <button type="button" id="imageToggle">
+        Hide Image
+    </button>
+
+    <button type="button" id="themeToggle">
+        Dark Theme
+    </button>
+
+    <button type="button" id="downloadResume">
+        Download Resume
+    </button>
+    <p>Downloaded Count: <span id="downloadCount">0</span></p>
+</div>
+
 </header>
 
     <main class="content">
@@ -269,10 +377,8 @@
         <section>
             <h2>Career Objective</h2>
             <p>
-                A final-year Computer Science and Engineering student interested
-                in software development and web technologies. Looking for an
-                opportunity to apply my technical knowledge, improve my skills,
-                and contribute to real-world software projects.
+                A final-year Computer Science and Engineering student interestedin software development and web technologies. Looking for an
+                opportunity to apply my technical knowledge, improve my skills,and contribute to real-world software projects.
             </p>
         </section>
 
@@ -331,16 +437,13 @@
 
                 <ul>
                     <li>
-                        Worked on Dictify, a smart online dictionary and
-                        vocabulary learning system.
+                        Worked on Dictify, a smart online dictionary and vocabulary learning system.
                     </li>
                     <li>
-                        Gained practical experience in Java backend development
-                        and React.js frontend development.
+                        Gained practical experience in Java backend development and React.js frontend development.
                     </li>
                     <li>
-                        Worked on developing user-friendly pages and integrating
-                        frontend components with backend functionality.
+                        Worked on developing user-friendly pages and integrating frontend components with backend functionality.
                     </li>
                 </ul>
             </div>
@@ -355,16 +458,13 @@
 
                 <ul>
                     <li>
-                        Worked with WordPress to create responsive website
-                        layouts.
+                        Worked with WordPress to create responsive website layouts.
                     </li>
                     <li>
-                        Used Figma to prepare wireframes and design user
-                        interface layouts.
+                        Used Figma to prepare wireframes and design user interface layouts.
                     </li>
                     <li>
-                        Learned the basics of responsive web design and
-                        user-friendly website development.
+                        Learned the basics of responsive web design and user-friendly website development.
                     </li>
                 </ul>
             </div>
@@ -375,8 +475,7 @@
             <div class="project">
                 <h3>1. Dictify – Smart Online Dictionary</h3>
                 <p>
-                    Developed a dictionary and vocabulary learning application
-                    with word search, favorites, search history, and vocabulary
+                    Developed a dictionary and vocabulary learning application with word search, favorites, search history, and vocabulary
                     practice features.
                 </p>
                 <p>
@@ -384,23 +483,9 @@
                 </p>
             </div>
             
-
-            <div class="project">
-                <h3>2. Dictify – Online Quiz Platform</h3>
-                <p>
-                    Developed an online quiz application for practicing
-                    technical subjects, checking scores, reviewing answers,
-                    and tracking quiz progress.
-                </p>
-                <p>
-                    <strong>Technologies:</strong> Java, Spring Boot, MongoDB,
-                    HTML, CSS, JavaScript
-                </p>
-            </div>
         </section>
         <section>
             <h2>Certifications</h2>
-
             <ul class="certifications">
                 <li>Infosys Springboard – Front End Web Developer</li>
                 <li>AWS Academy Graduate – Cloud Foundations</li>
@@ -413,7 +498,53 @@
     </main>
 </div>
 
+<script>
+    
+    const profileImage = document.querySelector(".profile-img");
+    const imageToggle = document.getElementById("imageToggle");
+    imageToggle.addEventListener("click", function () {
+        if (profileImage.style.display === "none") {
+            profileImage.style.display = "block";
+            imageToggle.textContent = "Hide Image";
+        } else {
+            profileImage.style.display = "none";
+            imageToggle.textContent = "Show Image";
+        }
+    });
+
+    
+    const themeToggle = document.getElementById("themeToggle");
+ themeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+
+        if (document.body.classList.contains("dark-theme")) {
+            themeToggle.textContent = "Light Theme";
+        } else {
+            themeToggle.textContent = "Dark Theme";
+        }
+    });
+
+    const downloadResume = document.getElementById("downloadResume");
+    const downloadCount = document.getElementById("downloadCount");
+    let downloadTotal = 0;
+
+    downloadResume.addEventListener("click", function () {
+        downloadTotal += 1;
+        downloadCount.textContent = downloadTotal;
+
+        const link = document.createElement("a");
+        link.href = "resume.html";
+        link.download = "Keerthana_P_Resume.html";
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    });
+    </script>
 </body>
 </html>
+
+
+
+
 
 
